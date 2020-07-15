@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+    form(method = 'post')
+        div.input
+            span.label id 
+            input(type="text", name="id")
+        br
+        div.input
+            span.label Name 
+            input(type="text", name="First")
+        br
+        div.input
+            span.label Email
+            input(type="email", name="Last")
+        br
+        div.actions
+        
+            input(type="submit", value="Submit")
